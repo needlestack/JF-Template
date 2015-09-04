@@ -1,9 +1,9 @@
 Changes
+lib/JF/Template.pm
+LICENSE
 Makefile.PL
 MANIFEST
-README
-lib/JF/Template.pm
-t/JF-Template.t
+README.md
 t/combined.result
 t/combined.tmpl
 t/echo.result
@@ -12,6 +12,7 @@ t/include.result
 t/include.tmpl
 t/include2.tmpl
 t/include3.tmpl
+t/JF-Template.t
 t/logic.result
 t/logic.tmpl
 t/loops.result

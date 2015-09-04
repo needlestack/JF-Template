@@ -1,0 +1,47 @@
+The following text is from another file:
+
+	<% include "include2.tmpl" %>
+
+So is this ... twice in a row:
+
+<% include "include2.tmpl" %><% include "include2.tmpl" %>
+
+And this one uses the concatination feature for template name:
+
+	<% include $foo ".tmpl" %>
+
+Here we try including from within a loop... does the directory
+defined in the template object stick?
+
+<% loop "loop_include" %>
+
+    <% echo $num %> <% include "include2.tmpl" %>
+
+    How about from within an if-elsif-else statement?
+
+    <% if ! $false %>
+        <% include "include2.tmpl" %>
+    <% endif %>
+
+    <% if $false %>
+        WRONG!
+    <% elsif ! $false %>
+        <% include "include2.tmpl" %>
+    <% endif %>
+
+    <% if $false %>
+        WRONG!
+    <% else %>
+        <% include "include2.tmpl" %>
+    <% endif %>
+
+<% endloop %>
+
+The following is a recursive include:
+
+	<% include "include.tmpl" %>
+
+The following is a sneaky recursive include:
+
+	<% include "include3.tmpl" %>
+

@@ -1,0 +1,26 @@
+Combined Tests
+
+global value: <% echo $value %>
+
+<% loop "outerloop" %>
+    outer loop before: <% echo $value %>
+    <% loop "innerloop" %>
+	<% if $do_set %>
+	    inner loop value before set: <% echo $value %>
+	    <% set "value", "BING!" %>
+	    inner loop value after set: <% echo $value %>
+	<% else %>
+	    inner loop value, no set: <% echo $value %>
+	<% endif %>
+    <% endloop %>
+    outer loop value after: <% echo $value %>
+    ---------------
+    <% include "include2.tmpl" %>
+    ---------------
+<% endloop %>
+
+global value: <% echo $value %>
+
+SetTest1: Does <% set foo, "bar" %> throw a warning? It should.
+SetTest2: Does <% set "foo", bar %> throw a warning? It should.
+SetTest3: Does <% set foo bar %> throw a warning? It should.

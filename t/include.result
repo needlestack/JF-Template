@@ -1,0 +1,50 @@
+The following text is from another file:
+
+This text is from the file include2.tmpl.
+
+So is this ... twice in a row:
+
+This text is from the file include2.tmpl.
+This text is from the file include2.tmpl.
+
+And this one uses the concatination feature for template name:
+
+This text is from the file include2.tmpl.
+
+Here we try including from within a loop... does the directory
+defined in the template object stick?
+
+
+    1 This text is from the file include2.tmpl.
+
+
+    How about from within an if-elsif-else statement?
+
+This text is from the file include2.tmpl.
+
+This text is from the file include2.tmpl.
+
+This text is from the file include2.tmpl.
+
+
+    2 This text is from the file include2.tmpl.
+
+
+    How about from within an if-elsif-else statement?
+
+This text is from the file include2.tmpl.
+
+This text is from the file include2.tmpl.
+
+This text is from the file include2.tmpl.
+
+
+The following is a recursive include:
+
+
+The following is a sneaky recursive include:
+
+Now we include the file that included us:
+
+
+

@@ -1,0 +1,54 @@
+Combined Tests
+
+global value: outer
+
+    outer loop before: 1
+	    inner loop value, no set: a
+	    inner loop value, no set: b
+	    inner loop value, no set: c
+	    inner loop value, no set: d
+    outer loop value after: 1
+    ---------------
+This text is from the file include2.tmpl.
+    ---------------
+    outer loop before: 2
+	    inner loop value before set: a
+	    inner loop value after set: BING!
+	    inner loop value before set: b
+	    inner loop value after set: BING!
+	    inner loop value before set: c
+	    inner loop value after set: BING!
+	    inner loop value before set: d
+	    inner loop value after set: BING!
+    outer loop value after: 2
+    ---------------
+This text is from the file include2.tmpl.
+    ---------------
+    outer loop before: 3
+	    inner loop value, no set: a
+	    inner loop value, no set: b
+	    inner loop value, no set: c
+	    inner loop value, no set: d
+    outer loop value after: 3
+    ---------------
+This text is from the file include2.tmpl.
+    ---------------
+    outer loop before: 4
+	    inner loop value before set: a
+	    inner loop value after set: BING!
+	    inner loop value before set: b
+	    inner loop value after set: BING!
+	    inner loop value before set: c
+	    inner loop value after set: BING!
+	    inner loop value before set: d
+	    inner loop value after set: BING!
+    outer loop value after: 4
+    ---------------
+This text is from the file include2.tmpl.
+    ---------------
+
+global value: outer
+
+SetTest1: Does  throw a warning? It should.
+SetTest2: Does  throw a warning? It should.
+SetTest3: Does  throw a warning? It should.

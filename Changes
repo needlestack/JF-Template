@@ -1,0 +1,6 @@
+Revision history for Perl extension JF::Template.
+
+1.0  Tue Aug 18 16:50:54 2015
+	- original published version; created by h2xs 1.23 with options
+		-AX JF::Template
+

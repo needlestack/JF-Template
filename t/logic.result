@@ -1,0 +1,45 @@
+Simple Logic Tests... including bad indentation
+
+	One
+
+ Two 
+
+	Three 
+
+
+	Four
+
+
+
+Advanced Logic Tests...
+
+
+Five
+
+	Six
+
+Nested Logic Tests...
+
+    Seven 
+
+
+
+
+Text::Tmpl Logic Compatibility Tests...
+
+
+
+	Eight
+
+Even misnamed closing tags are okay now:
+
+Nine
+
+Ten
+
+And Text::Tmpl accepts dots in the variable names (hmmpf):
+
+    This one goes to Eleven.
+
+
+

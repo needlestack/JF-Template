@@ -1,0 +1,13 @@
+Echo Tests....
+
+There's not a lot you can test about an echo:
+
+Test1: <% echo $test1 %> Test2: <%echo $test2%> Test3: <%  echo  $test3  %>
+<% echo $test4 %><% echo $test6 %><% echo $test5 %>
+
+Test2: Oh, you can test that the variable names work with dots:
+	<% echo $test.a %> <% echo $test.b %>
+
+Test3: And you can test that malformed <% echo args %> give a proper warning.
+
+Test4: But do malformed tags with a <% echo 1 %> give a proper warning?

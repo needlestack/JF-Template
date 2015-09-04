@@ -1,0 +1,12 @@
+Loop Tests...
+
+global value: <% echo $value %>
+
+<% loop "outerloop" %>
+    outer loop value: <% echo $value %>
+    <% loop "innerloop" %>
+	inner loop value: <% echo $value %>
+    <% endloop %>
+<% endloop %>
+
+global value: <% echo $value %>

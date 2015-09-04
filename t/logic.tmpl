@@ -1,0 +1,97 @@
+Simple Logic Tests... including bad indentation
+
+<% if $true %>
+	One
+<% endif %>
+
+<% if $false %> A <% else %> Two <% endif %>
+
+<% if !$false %>
+	Three <% else %>
+	B <% endif %>
+
+<% if $false %>C<% elsif $true %>
+	Four
+<% else %>D<% endif %>
+
+<% if $false %>
+	E
+<% endif %>
+
+Advanced Logic Tests...
+
+<% if $true && $false %>
+	F
+<% endif %>
+
+<% if $true||$false %>Five<% endif %>
+
+<% if $true && !($false || $true) %>
+	G
+<% else %>
+	Six
+<% endif %>
+
+Nested Logic Tests...
+
+<% if $true %>
+    <% if $true %>Seven <% endif %>
+<% endif %>
+
+<% if $false %>
+    <% if $true %>
+	H
+    <% endif %>
+<% endif %>
+
+<% if $true %>
+    <% if $false %>
+	I
+    <% endif %>
+<% endif %>
+
+<% if $false %>
+    <% if $false %>
+	J
+    <% endif %>
+<% endif %>
+
+Text::Tmpl Logic Compatibility Tests...
+
+<% ifn $true %>K<% endifn %>
+
+<% ifn $false %>
+	Eight
+<% endifn %>
+
+Even misnamed closing tags are okay now:
+
+<% if $true %>
+Nine
+<% endifn %>
+
+<% ifn $false %>Ten<% endif %>
+
+And Text::Tmpl accepts dots in the variable names (hmmpf):
+
+<% if $tr.ue %>
+    This one goes to Eleven.
+<% endif %>
+
+<% if $true and $true %>
+    This "and" should generate a warning and not be rendered up.
+<% elsif $true and $true %>
+    Same here (and).
+<% endif %>
+
+<% if $true or $true %>
+    This "or" should generate a warning and not be rendered up.
+<% elsif $true and $true %>
+    Same here (or).
+<% endif %>
+
+<% if not $false %>
+    This "not" should generate a warning and not be rendered up.
+<% elsif not $false %>
+    Same here (not).
+<% endif %>

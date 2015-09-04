@@ -1,0 +1,18 @@
+Loop Tests...
+
+global value: outer
+
+    outer loop value: 1
+	inner loop value: a
+	inner loop value: b
+	inner loop value: c
+    outer loop value: 2
+	inner loop value: a
+	inner loop value: b
+	inner loop value: c
+    outer loop value: 3
+	inner loop value: a
+	inner loop value: b
+	inner loop value: c
+
+global value: outer

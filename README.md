@@ -195,7 +195,7 @@ and will generate a warning as well as not rendering as you expected.
     object rather than the template to get at your inner loop. You can then call
     set\_value() on the inner loop object.
 
-- my print $t->parse\_file("template.html");
+- print $t->parse\_file("template.html");
 
     When you've finished setting values and getting loops, you call this method to
     render your data into the template and return the result. It's just a string,

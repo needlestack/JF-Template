@@ -1451,7 +1451,7 @@ You can nest loops too, just be sure that you call get_loop() on the outer loop
 object rather than the template to get at your inner loop. You can then call
 set_value() on the inner loop object.
 
-=item my print $t->parse_file("template.html");
+=item print $t->parse_file("template.html");
 
 When you've finished setting values and getting loops, you call this method to
 render your data into the template and return the result. It's just a string,
